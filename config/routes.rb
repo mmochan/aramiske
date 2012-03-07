@@ -1,4 +1,7 @@
 Aramiske::Application.routes.draw do
+  resources :mains
+  root :to => 'mains#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
