@@ -25,6 +25,9 @@ gem "bson_ext"
 gem 'thin'  
 
 
+gem 'rspec-rails'
+
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
