@@ -7,7 +7,7 @@ test:
   database: aramiske_test
 
 # set these environment variables on your prod server
-production:
+production:	
   uri: <%= ENV['MONGOHQ_URL'] %>	
   host: <%= ENV['MONGOID_HOST'] %>
   port: <%= ENV['MONGOID_PORT'] %>
