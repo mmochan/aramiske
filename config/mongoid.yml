@@ -7,13 +7,18 @@ test:
   database: aramiske_test
 
 # set these environment variables on your prod server
-production:	
-  uri: <%= ENV['MONGOHQ_URL'] %>	
-  host: <%= ENV['MONGOID_HOST'] %>
-  port: <%= ENV['MONGOID_PORT'] %>
-  username: <%= ENV['MONGOID_USERNAME'] %>
-  password: <%= ENV['MONGOID_PASSWORD'] %>
-  database: <%= ENV['MONGOID_DATABASE'] %>
+
+production:
+  host: localhost
+  database: aramiske_production
+
+#production:	
+#  uri: <%= ENV['MONGOHQ_URL'] %>	
+#  host: <%= ENV['MONGOID_HOST'] %>
+#  port: <%= ENV['MONGOID_PORT'] %>
+#  username: <%= ENV['MONGOID_USERNAME'] %>
+#  password: <%= ENV['MONGOID_PASSWORD'] %>
+#  database: <%= ENV['MONGOID_DATABASE'] %>
   # slaves:
   #   - host: slave1.local
   #     port: 27018
