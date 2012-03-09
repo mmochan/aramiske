@@ -1,0 +1,2 @@
+rm jquery.easing-1.3.min.js 
+rm jquery.smartStartSlider.min.js 
