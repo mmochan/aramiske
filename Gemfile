@@ -19,6 +19,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'fancybox-rails'
 gem 'heroku'
 gem 'mongoid'
 gem "bson_ext"
