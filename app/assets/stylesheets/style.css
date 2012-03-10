@@ -35,7 +35,7 @@ body {
 }
 
 ::-moz-selection { background: #f15a23; color: #fff; text-shadow: none; }
-.::selection { background: #f15a23; color: #fff; text-shadow: none; }
+::selection { background: #f15a23; color: #fff; text-shadow: none; }
 
 h1, h2, h3, h4, h5, h6 {
 	color: #474747;
