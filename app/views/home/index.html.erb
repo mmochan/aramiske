@@ -1,1 +1,129 @@
-<p>Hello</p>
+<% @blogs.each do |blog| %>
+
+<ul>
+  <li><%= blog %></li>
+</ul>
+
+<% end %>
+  <header id="header" class="container clearfix">
+  	<%=image_tag("logo.png") %>
+  	<nav id="main-nav">	
+  		<ul>
+  			<li class="current">
+          <%= link_to "Home", home_path, 'data-description' => 'All starts here' %>
+  				<ul>
+  					<li><a href="logos-slider.html">Logos Slider</a></li>
+  					<li><a href="photos-slider.html">Photos Slider</a></li>
+  				</ul>
+  			</li>
+  			<li>
+				<%= link_to "Services", services_path, 'data-description' => 'All the different stuff' %>
+  				<ul>
+  					<li><a href="about-us.html">About Us</a></li>
+  					<li><a href="our-team.html">Our Team</a>
+  						<ul>
+  							<li><a href="we-are-hiring.html">We are hiring</a></li>
+  						</ul>
+  					</li>
+  					<li><a href="elements.html">Elements</a></li>
+  					<li><a href="pricing-tables.html">Pricing Tables</a></li>
+  					<li><a href="columns.html">Columns</a></li>
+  					<li><a href="#">Third Level Item</a>
+  						<ul>
+  							<li><a href="#">This is a simple example</a></li>
+  							<li><a href="#">Of the third level</a></li>
+  							<li><a href="#">Navigation item</a></li> 
+  						</ul>
+  					</li>
+  				</ul>
+  			</li>
+  			<li>
+          <%= link_to "Blog", blogs_path, 'data-description' => 'What we think' %>        
+  				<ul>
+  					<li><a href="single-post.html">Single Post</a></li>
+  				</ul>
+  			</li>
+  			<li>
+				<%= link_to "Portfolio", portfolios_path, 'data-description' => 'Work we are proud of' %>        
+  				<ul>
+  					<li><a href="portfolio-2-columns.html">2 Columns</a></li>
+  					<li><a href="portfolio-3-columns.html">3 Columns</a></li>
+  					<li><a href="portfolio-4-columns.html">4 Columns</a></li>
+  					<li><a href="single-project.html">Single Project</a></li>
+  				</ul>
+  			</li>
+  			<li>
+				<%= link_to "Contact", contacts_path, 'data-description' => 'Enquire here' %>                
+  			</li>
+  		</ul>
+  	</nav><!-- end #main-nav -->
+	
+  </header><!-- end #header -->
+  
+
+		
+
+
+  </br>  </br>  </br>  </br>  </br>  </br>  </br>  </br>  </br>  </br>  </br>  </br>  </br>  </br>  </br>
+	
+</section><!-- end #content -->
+
+<footer id="footer" class="clearfix">
+
+	<div class="container">
+
+		<div class="three-fourth">
+
+			<nav id="footer-nav" class="clearfix">
+
+				<ul>
+          <li><%=link_to "Home", home_path %></li>         
+          <li><%=link_to "Services", services_path %></li>  
+          <li><%=link_to "Blog", services_path %></li>                              
+          <li><%=link_to "Portfolio", portfolios_path %></li>                                        
+          <li><%=link_to "Contact", contacts_path %></li>                                                  
+				</ul>
+				
+			</nav><!-- end #footer-nav -->
+
+			<ul class="contact-info">
+				<li class="address">443 Mt Glorious Road, Samford Valley, 4520, Australia</li>
+				<li class="phone">(0411) 815-602</li>
+				<li class="email"><a href="mailto:mmochan@aramiske.com.au">mmochan@aramiske.com.au</a></li>
+			</ul><!-- end .contact-info -->
+			
+		</div><!-- end .three-fourth -->
+
+		<div class="one-fourth last">
+
+			<span class="title">Stay connected</span>
+
+			<ul class="social-links">
+				<li class="twitter"><a href=https://twitter.com/#!/aramiske1>Twitter</a></li>
+				<li class="facebook"><a href="#">Facebook</a></li>
+				<li class="digg"><a href="#">Digg</a></li>
+				<li class="vimeo"><a href="#">Vimeo</a></li>
+				<li class="youtube"><a href="#">YouTube</a></li>
+				<li class="skype"><a href="#">Skype</a></li>
+			</ul><!-- end .social-links -->
+
+		</div><!-- end .one-fourth.last -->
+		
+	</div><!-- end .container -->
+
+</footer><!-- end #footer -->
+
+<footer id="footer-bottom" class="clearfix">
+
+	<div class="container">
+
+		<ul>
+			<li>Aramiske &copy; 2012</li>
+			<li><a href="#">Legal Notice</a></li>
+			<li><a href="#">Terms</a></li>
+		</ul>
+
+	</div><!-- end .container -->
+
+</footer><!-- end #footer-bottom -->
+  
