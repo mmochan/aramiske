@@ -7,6 +7,7 @@ set :user, "mmochan"
 set :deploy_to, "/home/#{user}/rails/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
+set :bundle_cmd, 'source $HOME/.bash_profile && bundle'
 
 set :scm, "git"
 set :repository, "git@github.com:mmochan/#{application}.git"
