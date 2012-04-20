@@ -1,5 +1,5 @@
 require "bundler/capistrano"
-require "rvm/capistrano"                               # Load RVM's capistrano plugin.
+
 
 server "106.187.94.24", :web, :app, :db, primary: true
 
@@ -8,7 +8,7 @@ set :user, "mmochan"
 set :deploy_to, "/home/#{user}/rails/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
-set :bundle_cmd, 'source $HOME/.bash_profile && bundle'
+#set :bundle_cmd, 'source $HOME/.bash_profile && bundle'
 
 set :scm, "git"
 set :repository, "git@github.com:mmochan/#{application}.git"
@@ -50,4 +50,5 @@ namespace :deploy do
     end
   end
   before "deploy", "deploy:check_revision"
+  before 'deploy:setup', 'rvm:install_rvm'
 end
