@@ -56,5 +56,5 @@ namespace :deploy do
   end
   
   before "deploy", "deploy:check_revision"
-  before "deploy:cold", "deploy:install_bundler"
+#  before "deploy:cold", "deploy:install_bundler"
 end
