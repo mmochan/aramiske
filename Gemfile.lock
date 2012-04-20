@@ -166,7 +166,6 @@ PLATFORMS
 
 DEPENDENCIES
   bson_ext
-  capistrano
   coffee-rails (~> 3.2.1)
   execjs
   fancybox-rails
