@@ -26,10 +26,6 @@ gem 'fancybox-rails'
 gem 'heroku'
 gem "bson_ext"
 gem 'thin'  
-
-gem 'rvm-capistrano'
-
-
 gem 'rspec-rails'
 
 
@@ -43,7 +39,7 @@ gem 'rspec-rails'
 gem 'unicorn'
 
 # Deploy with Capistrano
-gem 'capistrano'
-
+#gem 'capistrano'
+gem 'rvm-capistrano'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
