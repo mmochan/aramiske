@@ -1,3 +1,3 @@
-class Service
-  include Mongoid::Document
+class Service < ActiveRecord::Base
+
 end

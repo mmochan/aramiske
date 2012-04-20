@@ -8,6 +8,8 @@ gem 'rails', '3.2.3'
 
 #gem 'mysql2'
 
+gem 'pg'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -22,7 +24,6 @@ end
 gem 'jquery-rails'
 gem 'fancybox-rails'
 gem 'heroku'
-gem 'mongoid'
 gem "bson_ext"
 gem 'thin'  
 

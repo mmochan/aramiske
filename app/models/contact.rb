@@ -1,3 +1,3 @@
-class Contact
-  include Mongoid::Document
+class Contact < ActiveRecord::Base
+
 end

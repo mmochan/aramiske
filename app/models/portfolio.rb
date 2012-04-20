@@ -1,3 +1,3 @@
-class Portfolio
-  include Mongoid::Document
+class Portfolio < ActiveRecord::Base
+  
 end

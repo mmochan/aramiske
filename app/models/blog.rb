@@ -1,6 +1,3 @@
-class Blog
-  include Mongoid::Document
-
-  field :title
+class Blog < ActiveRecord::Base
   
 end
