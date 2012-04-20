@@ -27,6 +27,8 @@ gem 'heroku'
 gem "bson_ext"
 gem 'thin'  
 
+gem 'rvm-capistrano'
+
 
 gem 'rspec-rails'
 

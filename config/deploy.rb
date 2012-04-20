@@ -1,5 +1,9 @@
 require "bundler/capistrano"
 
+set :rvm_ruby_string, 'ree@rails3'                     # Or:
+
+require "rvm/capistrano"                               # Load RVM's capistrano plugin.
+
 server "106.187.94.24", :web, :app, :db, primary: true
 
 set :application, "aramiske"
