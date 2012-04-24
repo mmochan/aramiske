@@ -44,7 +44,6 @@ GEM
       execjs
     coffee-script-source (1.3.1)
     daemons (1.1.8)
-    diff-lcs (1.1.3)
     erubis (2.7.0)
     eventmachine (0.12.10)
     execjs (1.3.0)
@@ -131,19 +130,6 @@ GEM
     rest-client (1.6.7)
       mime-types (>= 1.16)
     rr (1.0.4)
-    rspec (2.9.0)
-      rspec-core (~> 2.9.0)
-      rspec-expectations (~> 2.9.0)
-      rspec-mocks (~> 2.9.0)
-    rspec-core (2.9.0)
-    rspec-expectations (2.9.1)
-      diff-lcs (~> 1.1.3)
-    rspec-mocks (2.9.0)
-    rspec-rails (2.9.0)
-      actionpack (>= 3.0)
-      activesupport (>= 3.0)
-      railties (>= 3.0)
-      rspec (~> 2.9.0)
     ruby_parser (2.3.1)
       sexp_processor (~> 3.0)
     rubyzip (0.9.7)
@@ -198,7 +184,6 @@ DEPENDENCIES
   quiet_assets
   rails (= 3.2.3)
   rr
-  rspec-rails
   sass-rails (~> 3.2.3)
   therubyracer
   thin

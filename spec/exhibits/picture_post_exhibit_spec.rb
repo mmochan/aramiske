@@ -1,3 +1,8 @@
+require 'minitest/autorun'
+require 'ostruct'
+require 'time'
+require 'rr'
+
 require_relative '../spec_helper_lite'
 require_relative '../../app/exhibits/picture_post_exhibit'
 

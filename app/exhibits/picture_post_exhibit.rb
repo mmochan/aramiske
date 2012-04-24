@@ -1,4 +1,5 @@
 require ’delegate’
+
 class PicturePostExhibit < SimpleDelegator
   def 
     initialize(model, context) @context = context super(model)

@@ -26,7 +26,7 @@ gem 'fancybox-rails'
 gem 'heroku'
 gem "bson_ext"
 gem 'thin'  
-gem 'rspec-rails'
+
 
 group :development, :test do
   gem 'rr'
