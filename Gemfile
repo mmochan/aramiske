@@ -28,6 +28,15 @@ gem "bson_ext"
 gem 'thin'  
 gem 'rspec-rails'
 
+group :development, :test do
+  gem 'rr'
+  gem 'pry'
+  gem 'pry-doc'
+  gem 'minitest-growl'
+  gem 'minitest-pry'
+  gem 'guard-minitest'  
+#  gem 'minitest-debugger'    
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -43,3 +52,8 @@ gem 'unicorn'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+
+gem 'quiet_assets', group: :development
+gem 'thin', group: :development
+

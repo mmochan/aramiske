@@ -4,12 +4,17 @@ Aramiske::Application.routes.draw do
 
   resources :portfolios
 
-  resources :blogs
+  get "blog/index"
+  
+  resources :posts
+
+  
 
   resources :services
 
   match 'home' => 'home#index'
   
+#    root to: "blog#index"
   root :to => 'home#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
