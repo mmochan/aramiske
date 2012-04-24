@@ -1,5 +1,5 @@
-require_relative ’../spec_helper_lite’
-require_relative ’../../app/exhibits/picture_post_exhibit’
+require_relative '../spec_helper_lite'
+require_relative '../../app/exhibits/picture_post_exhibit'
 
 describe PicturePostExhibit do
    before do
