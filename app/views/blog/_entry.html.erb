@@ -1,7 +1,4 @@
-<article>
-  <header>
+<% entry = exhibit(entry, self) %> 
   <p><time pubdate="pubdate"><%= entry.pubdate %></time></p>
-    <h3><%= entry.title %></h3> 
-  </header>
-  <p><%= entry.body %></p>
-</article>
+  <h3><%=entry.title %></h3>
+<%= entry.render_body %> 

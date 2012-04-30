@@ -1,11 +1,23 @@
-<h1>New Post</h1>
-<article class="entry clearfix">
-	<div class="entry-body">
-		<%= form_for @post do |f| %>
-		  <h1 class="title"><%= f.text_field :title %> </h1>
-		  <%= f.text_area :body %> 
-		  <%= label :image_url, "Picture URL:" %> <%= f.text_field :image_url %>  
-		  <%= f.submit %>
-		<% end %>
-	</div>	
-</article>
+<section id="content" class="container clearfix">
+	<header class="page-header">
+		<% if flash[:error]%>
+			<div class=error><%= flash[:error] %></div>
+		<% end %>	
+		<br />
+		<h1 class="page-title">Write something interesting....</h1>
+	</header>
+	<section id="main">
+		<article class="entry single clearfix">
+			<div class="entry-body">
+				<%= form_for @post do |f| %>
+				  <h1 class="title"><%= f.text_field :title %> </h1>
+				  <%= f.text_area :body %> 
+				  <%= label :image_url, "Picture URL:" %> 
+				  <%= f.text_field :image_url %>  
+				  <%= f.submit %>
+				<% end %>
+			</div>	
+		</article>
+	</section>
+</section>
+    

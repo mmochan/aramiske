@@ -7,14 +7,61 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<div class="sidebar two columns">
-  <nav> 
-    <ul>
-      <li><%= link_to "New post...", new_post_path %></li> 
-    </ul>
-  </nav>
-</div>
+	
+  <header id="header" class="container clearfix">
+  	<%=image_tag("logo.png") %>
+  	<nav id="main-nav">	
+  		<ul>
+  			<li class="current">
+          <%= link_to "Home", home_path, 'data-description' => 'All starts here' %>
+  				<ul>
+  					<li><a href="logos-slider.html">Logos Slider</a></li>
+  					<li><a href="photos-slider.html">Photos Slider</a></li>
+  				</ul>
+  			</li>
+  			<li>
+				<%= link_to "Services", services_path, 'data-description' => 'All the different stuff' %>
+  				<ul>
+  					<li><a href="about-us.html">About Us</a></li>
+  					<li><a href="our-team.html">Our Team</a>
+  						<ul>
+  							<li><a href="we-are-hiring.html">We are hiring</a></li>
+  						</ul>
+  					</li>
+  					<li><a href="elements.html">Elements</a></li>
+  					<li><a href="pricing-tables.html">Pricing Tables</a></li>
+  					<li><a href="columns.html">Columns</a></li>
+  					<li><a href="#">Third Level Item</a>
+  						<ul>
+  							<li><a href="#">This is a simple example</a></li>
+  							<li><a href="#">Of the third level</a></li>
+  							<li><a href="#">Navigation item</a></li> 
+  						</ul>
+  					</li>
+  				</ul>
+  			</li>
+  			<li>
+          <%= link_to "Blog", blog_index_path, 'data-description' => 'What we think' %>        
+  				<ul>
+  					<li><a href="single-post.html">Single Post</a></li>
+  				</ul>
+  			</li>
+  			<li>
+				<%= link_to "Portfolio", portfolios_path, 'data-description' => 'Work we are proud of' %>        
+  				<ul>
+  					<li><a href="portfolio-2-columns.html">2 Columns</a></li>
+  					<li><a href="portfolio-3-columns.html">3 Columns</a></li>
+  					<li><a href="portfolio-4-columns.html">4 Columns</a></li>
+  					<li><a href="single-project.html">Single Project</a></li>
+  				</ul>
+  			</li>
+  			<li>
+				<%= link_to "Contact", contacts_path, 'data-description' => 'Enquire here' %>                
+  			</li>
+  		</ul>
+  	</nav><!-- end #main-nav -->
+	
+  </header><!-- end #header -->
 	
 
 <%= yield %>

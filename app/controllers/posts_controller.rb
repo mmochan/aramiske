@@ -9,7 +9,8 @@ class PostsController < ApplicationController
     if  @post.publish
       redirect_to root_path, notice: "Post added!"
     else
-      render "new"
+       flash[:error] = 'A title might be a good start'
+      render "new", notice: "Post not added!"
     end
   end
 end

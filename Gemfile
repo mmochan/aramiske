@@ -26,7 +26,7 @@ gem 'fancybox-rails'
 gem 'heroku'
 gem "bson_ext"
 gem 'thin'  
-
+gem 'activerecord-postgres-hstore'
 
 group :development, :test do
   gem 'rr'
