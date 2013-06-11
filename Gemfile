@@ -1,45 +1,74 @@
 source 'https://rubygems.org'
+ruby "2.0.0"
 
 
-gem 'rails', '3.2.3'
+gem 'rails', '3.2.13'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-#gem 'mysql2'
-
-gem 'pg'
-
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
+  gem 'therubyracer', :platforms => :ruby
   gem 'uglifier', '>= 1.0.3'
-  gem 'therubyracer'
-  gem "execjs"
+end
+
+platforms :ruby do
+  gem 'pg'
+  #gem 'sqlite3'
+end
+
+platforms :jruby do
+  gem 'activerecord-jdbcsqlite3-adapter'
+  gem 'trinidad'
+  gem 'jruby-openssl'
 end
 
 gem 'jquery-rails'
-gem 'fancybox-rails'
-gem 'heroku'
-gem "bson_ext"
-gem 'thin'  
-gem 'rspec-rails'
 
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
+# Use unicorn as the web server
 gem 'unicorn'
 
 # Deploy with Capistrano
-gem 'capistrano'
+# gem 'capistrano'
 
 # To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
+# gem 'ruby-debug'
+
+# Bundle the extra gems:
+gem 'RedCloth', '~> 4.2.9', :require => 'redcloth'
+gem 'ruby-openid', :require => 'openid'
+gem 'rack-openid', :require => 'rack/openid'
+gem 'aaronh-chronic', :require => 'chronic' # Fixes for 1.9.2
+gem 'coderay', '~> 1.0.5'
+gem 'lesstile', '~> 1.1.0'
+gem 'formtastic'
+gem 'will_paginate', '~> 3.0.2'
+gem 'exception_notification', '~> 2.5.2'
+gem 'open_id_authentication'
+
+# Bundle gems for the local environment. Make sure to
+# put test-only gems in this group so their generators
+# and rake tasks are available in development mode:
+group :test do
+  gem 'database_cleaner'
+  gem 'cucumber-rails',    :require => false
+  gem 'cucumber-websteps', :require => false
+  gem 'factory_girl'
+  gem 'rspec'
+  gem 'nokogiri', '~> 1.5.0'
+  gem 'webrat'
+end
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'pry'
+end
+
+group :production, :test do
+  gem 'unicorn'
+end
