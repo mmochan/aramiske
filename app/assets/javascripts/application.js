@@ -12,10 +12,4 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require fancybox
-//= require jquery.jcarousel.min
-//= require jquery.gmap.min
-//= require jquery.isotope.min
-//= require jquery.smartStartSlider
-//= require custom
 //= require_tree .
